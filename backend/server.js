@@ -14,6 +14,7 @@ app.use(express.urlencoded({extended: false}))
 
 //this will move /api/goals to file in routes folder
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.listen(port, () => console.log(`server started on port ${port}`))
 
